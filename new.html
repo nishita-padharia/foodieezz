@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>my webpage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+            <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+   <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'> 
+
+    <style>
+        .navbar{
+            background: rgba(0, 0, 0, .6)!important;
+        }
+        
+        .navbar-dark .navbar-nav .nav-link{
+            padding-top: 4px;
+        }
+       
+        /* Make the image fully responsive*/
+  .carousel-inner img {
+    width: 1400px;
+    height: 600px;
+  } 
+      
+        .carousel-item{
+             position: relative;
+             text-align: center;
+             background-image:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+        }
+        #food{
+            position: absolute;
+             bottom:  260px;
+             left: 60px;
+             font-size: 190px;
+            font-family: 'Allura';
+            color:peachpuff;
+        }
+        
+          .book{
+                font-family: 'Courgette';
+             position: relative;
+             text-align: center;
+             color:lightpink;
+        }
+        .table{
+          position: absolute;
+             top: 10px;
+             left: 40px;
+            font-size: 120px;
+            padding: 0;
+            font-family: 'Allura';
+            color: lightpink;
+           
+        }
+         
+        .h1{
+               font-size: 150px;
+            color: lightpink;
+            
+        }
+         .visit{
+             font-size: 30px;
+            color: lightpink;
+           
+        }
+         #people{
+            font-size: 35px;
+        }
+           h1{
+               font-size: 55px;
+            color: saddlebrown;
+        }
+        #gallery{
+            font-family: 'Courgette';
+        }
+        #gallery img{
+            height: 200px;
+            width: 200px;
+        }
+         #gallery img:hover {
+              opacity: 0.5;
+              filter: alpha(opacity=50); 
+  
+        }
+        .offers{
+            font-family: 'Allura';
+               font-family: 'Courgette';
+             position: relative;
+             text-align: center;
+             color:lightpink;
+            
+            }
+        
+        
+        #offers{
+          position: absolute;
+             top: 1px;
+             left: 10px;
+            font-size: 80px;
+            padding: 0;
+            font-family: 'Allura';
+            color:white;
+       background-size: cover;
+            height: 500px;;
+            background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) );
+        }
+     
+        /* Footer */
+#contact{
+  padding: 20px;
+  text-align: center;
+  background: #111;
+  margin-top: 20px;
+  color:white;
+}
+
+       
+        
+  </style>
+</head>
+<body>
+<!--Navbar -->
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#" style="font-family: Allure">Foodieezz</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href=#gallery>Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contct us</a>
+      </li>
+      
+   </ul>
+   <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form>-->
+    
+    </div>
+</nav>    
+    
+    <div class="row">
+        <div class="col-lg-12">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="crousel1.jpeg" alt="Los Angeles">
+      <div class="carousel-caption">
+          <h2 id="food">Foodieezz..</h2>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="cousel2.jpeg" alt="Chicago">
+            <div class="carousel-caption">
+        </div>
+        </div>
+    <div class="carousel-item">
+      <img src="crousel3.jpeg" alt="New York">
+      <div class="carousel-caption">
+        <h3>Interiors</h3>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    
+      <!--booking-->
+    
+    
+    <div class="book">
+   <center>
+  <img src="f27.jpeg" width="100%" height="650px">
+       <div class="table">
+           <h1 class="h1">Book a table</h1>
+           <div class="visit">~visit our place~</div>
+   <form action="/action_page.php">
+<label for="people" placeholder="people" style="font-size: 10px; color: burlywood"></label>
+    <select id="people" name="int" >
+      <option value="2 people">2 people</option>
+      <option value="4 people">4 people</option>
+      <option value="8 people">8 people</option>
+    </select>
+        
+        <input name="date" type="date" placeholder="date" style="font-size: 30px; color: burlywood">
+      <input name="time" type="time" placeholder="time" style="font-size: 30px; color: burlywood">
+
+           </form> </div> </center> </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+   
+    
+    <!--chef-->
+    <center><h1 style="font-family: Courgette";><b> Our Chefs</b> <img src="f14.jpg" style="width: 130px"></h1></center>
+       
+    <div class="row">
+    
+       <div class="col-sm-1"></div>
+       <div class="col-sm-2"><img src="f9.jfif"><h2 style="font-family: Allura";>Mr.Jeorge</h2></div>
+       <div class="col-sm-2"><img src="f10.jfif"><h2 style="font-family: Allura";>Ms.Shally</h2></div>
+       <div class="col-sm-2"><img src="f11.jfif" style="height: 260px"><h2 style="font-family: Allura";>Mr.Jack</h2></div>
+        <div class="col-sm-2"><img src="f12.jfif"><h2 style="font-family: Allura";>Ms.Louis</h2></div>
+        <div class="col-sm-2"><img src="f13.jfif" style="height: 260px"><h2 style="font-family: Allura";>Ms.Reem</h2></div>
+       <div class="col-sm-1"></div>
+        
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+   
+    <!--gallery-->
+    <div class="row">
+    <div id="gallery">
+        <center><h1>~Our Gallery~</h1>
+            <a href="#C:\Users\HP\Desktop\foodieezz\f15.jfif" data-toggle="tooltip" title="Hooray!"><img src="f15.jfif"></a>
+            <a href="#C:\Users\HP\Desktop\foodieezz\f16.jfif" data-toggle="tooltip" title="Hooray!"><img src="f16.jfif"></a>
+            <a href="#C:\Users\HP\Desktop\foodieezz\f18.jfif" data-toggle="tooltip" title="Hooray!"><img src="f18.jfif"></a>
+            <a href="#C:\Users\HP\Desktop\foodieezz\f17.jfif" data-toggle="tooltip" title="Hooray!"><img src="f17.jfif"></a>
+            <a href="#C:\Users\HP\Desktop\foodieezz\f19.jfif" data-toggle="tooltip" title="Hooray!"><img src="f19.jfif"></a>
+            <a href="#C:\Users\HP\Desktop\foodieezz\f20.jfif" data-toggle="tooltip" title="Hooray!"><img src="f20.jfif"></a>
+            <a href="#C:\Users\HP\Desktop\foodieezz\f21.jfif" data-toggle="tooltip" title="Hooray!"><img src="f21.jfif"></a>
+            <a href="#C:\Users\HP\Desktop\foodieezz\f22.jfif" data-toggle="tooltip" title="Hooray!"><img src="f22.jfif"></a>
+            <a href="#C:\Users\HP\Desktop\foodieezz\f23.jfif" data-toggle="tooltip" title="Hooray!"><img src="f23.jfif"></a>
+            <a href="#C:\Users\HP\Desktop\foodieezz\f24.jfif" data-toggle="tooltip" title="Hooray!"><img src="f24.jfif"></a>
+        
+        </center>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+   <!--offers-->
+    <div class="offers">
+        <h1><center><b>Offers this week</b></center></h1>
+       <div class="row">
+           <div class="col-lg-1"></div>
+           <div class="col-lg-5"><center><img src="f6.jpeg" style="height: 500px; width: 550px" ></center>
+           <h1 id="offers">
+               <p><b>50%discount</b> on breakfast meal for 1st 3bookings</p>
+               </h1>
+           </div>
+           <div class="col-lg-5"><center><img src="f29.jpeg" style="height: 500px; width: 550px">
+               <h1 id="offers">
+               <p><strong>25% discount</strong>for our registered customers online booking</p>
+               </h1>
+               </center></div>
+           <div class="col-lg-1"></div>
+         <!--   <div class="col-md-4"><img src="f5.jfif" style="height: 500px; width: 460px"></div>    -->
+        </div> 
+    </div>
+<br>
+    <br>
+    <br>
+    <br>
+    <div class="vid">
+   <center><video width="900" controls>
+      <source src="cafe.mp4" type="video/mp4">
+      <source src="cafe.mp4" type="video/ogg">
+       </video></center>
+         </div>
+ 
+    <!--footer-->
+    <div id="contact">
+        <footer>
+               <img src="f7.jpeg" style="width: 300px; height: 150px">
+                    <p>we love to serve the most delicious taste to make your mood fresh and crazy</p>
+    <br>
+            <div class="row justify-content-center">
+            <div class="col-md-5 text-center">
+            <br><strong>Contact info</strong>
+            <p>+91 9824678856, 9876554326<br>foodieezzsector28fbd@gmail.com</p>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+             <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+             <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+            <div class="col-md-5 text-center">
+           <p>sector-15,main market,<br>faridabad</p>
+                <p>sector-29,block d,<br>gandhinagar</p>
+                <p>city center complex,main market,<br>cp new delhi</p>
+            </div>
+        </div>
+        </footer>
+    </div>
+    
+    </body>
+</html>
